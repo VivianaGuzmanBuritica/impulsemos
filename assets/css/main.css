@@ -215,17 +215,17 @@ h6 {
 .index-page .header {
   --background-color: rgba(255, 255, 255, 0);
   --heading-color: #ffffff;
-  --nav-color: rgba(255, 255, 255, 0.5);
-  --nav-hover-color: #ffffff;
+  --nav-color: #fff;
+  --nav-hover-color:rgba(255, 255, 255, 0.5);
 }
 
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: #ffffff;
+  --background-color: #1b262a;
   --heading-color: #32353a;
-  --nav-color: #3a3939;
-  --nav-hover-color: #e84545;
+  --nav-color: #fff;
+  --nav-hover-color: #ffc528;
 }
 
 /*--------------------------------------------------------------
@@ -744,7 +744,7 @@ section,
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--accent-color);
+ /*- background: var(--accent-color);*/ 
   display: inline-block;
 }
 
@@ -781,6 +781,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+   filter: blur(6px);
 }
 
 .hero:before {
@@ -1011,7 +1012,8 @@ section,
 
 .stats:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 40%);
+  background: linear-gradient(to bottom, transparent 40%, var(--background-color) 80%),
+    color-mix(in srgb, var(--background-color), transparent 70%);
   position: absolute;
   inset: 0;
   z-index: 2;
