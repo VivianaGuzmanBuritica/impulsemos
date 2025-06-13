@@ -90,3 +90,23 @@
 .news-nav:hover {
     background: lightgray;
 }
+
+.redes-sociales a i{
+ color: #fff;
+}
+.info-item{
+    display: flex;
+}
+.custom-bg {
+  background-color: #0d1121;
+  color: #fff;
+}
+.social-links a i, .copyright a{
+    color:#fff;
+}
+@media (max-width:1200px){
+    .redes-sociales{
+       margin: 5px;
+        display:none;
+    }
+}
